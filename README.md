@@ -19,7 +19,7 @@ Add the following JS files to the page:
 
 then, use the language in when initializing lunr:
 
-```javascript
+```js
 var index = lunr(function () {
     // use the language
     this.use(lunr.no);
@@ -38,8 +38,9 @@ That's it. Just add the documents and you're done.
 
 ## With node.js
 
-```javascript
+```js
 var lunr = require('lunr');
+require('lunr-no/lunr.stemmer.support.js')(lunr);
 require('lunr-no')(lunr);
 
 var index = lunr(function () {
@@ -53,9 +54,11 @@ var index = lunr(function () {
 
 
 # Building your own files
-See [lunr-languages](https://github.com/MihaiValentin/lunr-languages#building-your-own-files).
+See [lunr-languages][build].
+
+[build]: https://github.com/MihaiValentin/lunr-languages#building-your-own-files
 
 
 # Technical details & Credits
 This is a fork of [lunr-languages](https://github.com/MihaiValentin/lunr-languages).
-The code is identical, except an added trimmer.
+The code is identical, except the added trimmer.
