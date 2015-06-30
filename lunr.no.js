@@ -56,10 +56,22 @@
     lunr.no = function() {
       this.pipeline.reset();
       this.pipeline.add(
+        lunr.no.trimmer,
         lunr.no.stopWordFilter,
         lunr.no.stemmer
       );
     };
+
+    /* norwegian trimmer */
+    lunr.no.trimmer = function(token) {
+      var match = token.match(/[a-zæøå]+/i);
+      if (match) {
+        return match[0];
+      } else {
+        return undefined;
+      }
+    }
+    lunr.Pipeline.registerFunction(lunr.no.trimmer, 'trimmer-no');
 
     /* lunr stemmer function */
     lunr.no.stemmer = (function() {
