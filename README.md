@@ -1,8 +1,9 @@
-lunr Norwegian
+Norwegian lunr
 ==============
 
-This project features a Norwegian trimmer, language stemmer and stopword filter
-for [Lunr.js](http://lunrjs.com/) (a js full text search engine).
+[lunr-no](https://github.com/arve0/lunr-no) features a Norwegian trimmer,
+language stemmer and stopword filter for [Lunr.js](http://lunrjs.com/) (a js
+full text search engine).
 
 
 # How to use
