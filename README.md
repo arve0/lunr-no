@@ -1,12 +1,12 @@
-Lunr Norwegian
+lunr Norwegian
 ==============
 
 This project features a Norwegian trimmer, language stemmer and stopword filter
-for [Lunr](http://lunrjs.com/) (a js full text search engine).
+for [Lunr.js](http://lunrjs.com/) (a js full text search engine).
 
 
 # How to use
-Lunr-no supports AMD and CommonJS. Check out the examples below:
+lunr-no supports AMD and CommonJS. Check out the examples below:
 
 
 ## In a web browser
@@ -32,11 +32,7 @@ var index = lunr(function () {
 That's it. Just add the documents and you're done.
 
 
-## In a web browser, with browserify
-**TODO**
-
-
-## With node.js
+## With node.js (or with browserify)
 
 ```js
 var lunr = require('lunr');
