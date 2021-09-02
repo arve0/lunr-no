@@ -2,7 +2,7 @@
     "name": "lunr-no",
     "description": "Norwegian trimmer, stemmer and stopword filter for Lunr",
     "author": "Arve Seljebu",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "license": "MPL-1.1",
     "main": "lunr.no.js",
     "repository": {
