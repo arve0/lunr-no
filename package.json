@@ -5,5 +5,9 @@
     "version": "0.0.3",
     "license": "MPL-1.1",
     "main": "lunr.no.js",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/arve0/lunr-no.git"
+    },
     "homepage": "https://github.com/arve0/lunr-no"
 }
